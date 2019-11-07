@@ -1,0 +1,34 @@
+{
+  "sysAdmin": "nicoit@nicoit.com.ar",
+  "registryUrl1": "https://docs.google.com/spreadsheets/d/1qr0wn9JePirV1avY5DmnCJPKudbYIoX0TDAp4WZWNqU/edit#gid=0",
+  "registryUrl2":        "https://docs.google.com/spreadsheets/d/1zl1z2X0CdewIGS8yihf3eqVUo_AYHxqYnOLzsFjeW7w/export?format=csv&gid=0",
+  "registryUrl":  "https://docs.google.com/spreadsheets/d/1OGCrI2MohbK7Ak2yKeLVJuApTyYwMmcHuBzRLMVtobc/export?format=csv&gid=0",
+  "database": {
+    "username": "opendatacensus",
+    "password": "opendatacensus",
+    "database": "opendatacensus",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": false,
+    "define": {
+      "charset": "utf-8",
+      "collate": "utf8_general_ci",
+      "timestamps": true
+    }
+  },
+  "google": {
+    "app_id": "40656023366-jufjqpfgdhtgd9l11u7v8g0qsjiu9a6r.apps.googleusercontent.com",
+    "app_secret": "RaZjMtuyF2r3CPHiJIIq-wth"
+  },
+  "facebook": {
+    "app_id": "{FACEBOOK_APP_ID}",
+    "app_secret": "{FACEBOOK_APP_SECRET}"
+  },
+  "fallback_questionset1": "https://docs.google.com/spreadsheets/d/1UKpnHBqwKfpZCTRPTTwpYHE3Dx6QV7M8uWmEeDTNWPM/edit#gid=1999457872",
+  "fallback_questionset": "https://docs.google.com/spreadsheets/d/1e9dR5EQbuQwxYqCcU7jY9wBbE9ATzCXAQwcW-s8B-gU/export?format=csv&gid=989408091",
+  "auth_subdomain": "id",
+  "system_subdomain": "system",
+  "sentry_dsn": "",
+  "discussion_forum": "https://discuss.okfn.org/c/open-data-index"
+}

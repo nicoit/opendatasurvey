@@ -186,6 +186,7 @@ const EntryForm = React.createClass({
 <footer className="form-footer uncontrolled-fields">
   <input type="hidden" name="place" value={ this.props.place } />
   <input type="hidden" name="dataset" value={ this.props.dataset } />
+  <input type="hidden" name="anonymous" id="anonymousNo" value="No"/>
   <div className="container">
     <div className="text question">
       <div className="instructions"></div>
@@ -208,44 +209,6 @@ const EntryForm = React.createClass({
       <div className="comments"></div>
     </div>
 
-    <div className="yes-no sub neutral question">
-      <div className="main">
-        <div>
-          <div className="instructions">
-            <div className="collapse" id="instructionsAttribution">
-              <h4>Instructions</h4>
-              <p>By default, submissions to the census are credited to the submitter. If you would prefer to remain anonymous, please indicate so by checking the box.</p>
-            </div>
-            <a className="toggle" role="button" data-toggle="collapse" href="#instructionsAttribution" aria-expanded="false" aria-controls="instructionsAttribution"><span className="sr-only">Help</span><span className="icon">?</span></a>
-          </div>
-          <h2>Would you prefer your submission to remain anonymous?</h2>
-        </div>
-        <div>
-          <helpers.CurrentEntry />
-          <div className="answer-wrapper">
-            <div className="answer">
-              <input type="radio" name="anonymous"
-                     id="anonymousNo"
-                     value="No"
-                     defaultChecked={this.props.answers.anonymous === 'No'}
-                     {...readOnlyOpts} />
-              <label htmlFor="anonymousNo">
-                <span>No</span>
-              </label>
-              <input type="radio" name="anonymous"
-                     id="anonymousYes"
-                     value="Yes"
-                     defaultChecked={this.props.answers.anonymous === 'Yes'}
-                     {...readOnlyOpts} />
-              <label htmlFor="anonymousYes">
-                <span>Yes</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="comments"></div>
-    </div>
 
     <helpers.SubmitActions isReview={this.props.isReview}
                            canReview={this.props.canReview}

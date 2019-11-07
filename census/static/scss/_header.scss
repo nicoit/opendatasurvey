@@ -2,7 +2,8 @@ body {
   #header {
     $header-bg: $brand-info;
     $header-fg: #fff;
-    background-color: $header-bg;
+    //background-color: $header-bg;
+    background-image: url("/imgs/header2.png");
     border-bottom: solid 2px darken($header-bg, 10%);
     color: $header-fg;
 

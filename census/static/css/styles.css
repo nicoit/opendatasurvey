@@ -8109,7 +8109,9 @@ table.response-summary thead tr th.place-score,
   width: 65px !important; }
 
 body #header {
-  background-color: #428bca;
+  /*background-color: #428bca;*/
+
+  background-image: url("/imgs/header2.png");
   border-bottom: solid 2px #3071a9;
   color: #fff; }
   body #header a {

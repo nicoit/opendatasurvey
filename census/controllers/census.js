@@ -122,6 +122,8 @@ let submitPost = function(req, res, data) {
     let submitterId = utils.ANONYMOUS_USER_ID;
 
     if (req.body.anonymous && req.body.anonymous === 'No') {
+      //console.log(Object.keys(req.user));
+      //console.log(req.user.submitterId);
       submitterId = req.user.id;
     }
 
@@ -172,6 +174,8 @@ let submitPost = function(req, res, data) {
 
     let query;
     if (saveStrategy === 'create') {
+      console.log(Object.keys(objToSave));
+      console.log(objToSave['submitterId']);
       query = req.app.get('models').Entry.create(objToSave);
     } else if (saveStrategy === 'update') {
       query = objToSave.save();
