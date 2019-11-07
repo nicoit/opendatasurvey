@@ -300,7 +300,7 @@ const QuestionFieldSourceLine = props => {
   return (
     <ul>
       <li>
-        <label htmlFor={props.id + '_url'}>Source URL</label>
+        <label htmlFor={props.id + '_url'}>URL de origen</label>
         <input id={props.id + '_url'}
                name={props.id + '_url'}
                type="url"
@@ -310,7 +310,7 @@ const QuestionFieldSourceLine = props => {
                {...commonOpts} />
       </li>
       <li>
-        <label htmlFor={props.id + '_desc'}>Source description</label>
+        <label htmlFor={props.id + '_desc'}>Descripcion del origen</label>
         <input id={props.id + '_desc'}
                name={props.id + '_desc'}
                type="text"
@@ -380,7 +380,6 @@ let QuestionFieldSource = React.createClass({
                         placeholder={this.props.placeholder}
                         commentValue={this.props.commentValue}
                         onCommentChange={this.props.onCommentChange}
-                        disabled={!this.props.visibleProps.enabled}
                         disabled={!this.props.visibleProps.enabled}
                         readonly={this.props.readonly} />
     </div>);

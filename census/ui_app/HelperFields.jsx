@@ -8,7 +8,7 @@ const DiscussionLink = props => {
       <div className="main">
         <div>
           <div className="instructions"></div>
-          <p>Do you want to discuss this submission? Start a <a target="_blank" href={props.url}>new topic</a> on the forum!</p>
+          <p>Te gustaria debatir sobre estos datos? Inicia un debate en el foro  <a target="_blank" href={props.url}>aca!</a></p>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@ const CurrentEntry = props => {
     let dds = _.map(currentValue, (cv, i) => <dd key={i}>{cv}</dd>);
     return (<div className="current">
       <dl>
-        <dt>Current entry</dt>
+        <dt>Actual</dt>
         {dds}
       </dl>
     </div>);
@@ -51,7 +51,7 @@ const SubmitActions = props => {
       <div className="main">
         <div>
           <div className="instructions"></div>
-          <h2>Please add a short comment as to why you are accepting or rejecting this submission. <strong>Note that your message will be publically visible</strong></h2>
+          <h2>Por favor agrega un comentario de porque estas aceptando o rechazando esta informacion. <strong>Este comentario va a ser publicamente visible</strong></h2>
         </div>
         <div>
           <CurrentEntry />
@@ -68,16 +68,16 @@ const SubmitActions = props => {
       <div className="main">
         <div>
           <div className="instructions"></div>
-          <h4>Important</h4>
-          <p>As the reviewer, your name will be logged and displayed with the entry.</p>
+          <h4>Importante</h4>
+          <p>Como moderador de los datos, tu nombre va a ser mostrado.</p>
           <p>
-            If necessary, edit the submission before accepting it. In particular, please correct any spelling mistakes.
+            De ser necesario revisa todos los datos antes de enviar la solicitud.
           </p>
           <p>
-            <span className="label label-info">Publish</span> will save the changes made by a reviewer and publish the submission with these changes. The previous published entry will be replaced.
+            <span className="label label-info">Aceptar y Publicar</span> guardara los cambios hechos por el moderador.
           </p>
           <p>
-            <span className="label label-danger">Reject</span> will reject the submission and allow a new submission to be proposed. It should be used if submitters did not find all required data characteristics, but continued the survey anyway (i.e. did not answer B2 with "No", as they correctly should have done).
+            <span className="label label-danger">Rechazar</span> rechazara la carga y permitira una nueva ser creada.
           </p>
         </div>
         <div>
@@ -85,10 +85,10 @@ const SubmitActions = props => {
           <div className="answer-wrapper">
             <div className="answer">
               <form method="post" acceptCharset="utf-8" className="entry-form" onSubmit={props.onSubmitHandler}>
-                <button type="submit" className="btn" value="publish" name="reviewAction">Publish</button>
+                <button type="submit" className="btn" value="publish" name="reviewAction">Aceptar y Publicar</button>
               </form>
               <form method="post" acceptCharset="utf-8" className="entry-form" onSubmit={props.onSubmitHandler}>
-                <button type="submit" className="btn" value="reject" name="reviewAction" className="reject">Reject</button>
+                <button type="submit" className="btn" value="reject" name="reviewAction" className="reject">Rechazar</button>
               </form>
             </div>
           </div>
@@ -104,14 +104,14 @@ const SubmitActions = props => {
       <div className="main">
         <div>
           <div className="instructions"></div>
-          <p><small>By submitting material to the index you agreeing to <a href="http://okfn.org/terms-of-use/">terms of use</a> and also to license your contribution (to the extent there are any rights in it!) under the <a href="http://opendatacommons.org/licenses/pddl/1.0/">Open Data Commons Public Domain Dedication and License</a>.</small></p>
+          <p><small>Al enviar los datos estas accediendo a los <a href="http://okfn.org/terms-of-use/">terminos de uso</a> y licensiando tu contribucion bajo los terminos del  <a href="http://opendatacommons.org/licenses/pddl/1.0/">Open Data Commons Public Domain Dedication and License</a>.</small></p>
         </div>
         <div>
           <CurrentEntry />
           <div className="answer-wrapper">
             <div className="answer">
               <form method="post" acceptCharset="utf-8" onSubmit={props.onSubmitHandler}>
-                <button type="submit" className="btn">Submit</button>
+                <button type="submit" className="btn">Enviar</button>
               </form>
             </div>
           </div>
@@ -149,7 +149,7 @@ const QuestionComments = React.createClass({
     let readOnlyOpts = {};
     if (this.props.readonly) readOnlyOpts.readOnly = 'readonly';
     return (<div className="comments">
-      <label htmlFor={this.props.id + '_comment'}>Comments</label>
+      <label htmlFor={this.props.id + '_comment'}>Comentarios</label>
       <textarea placeholder={this.props.placeholder || 'Add comments' }
                 id={this.props.id + '_comment'}
                 rows="5"

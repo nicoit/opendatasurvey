@@ -76,22 +76,22 @@ const EntryForm = React.createClass({
     this.yourKnowledgeQuestions = [
       {
         id: 'yourKnowledgeDomain',
-        text: 'Rate your knowledge of ' + this.props.context.datasetName + '.',
+        text: 'Califica tu conocimiento de ' + this.props.context.datasetName + '.',
         description: '',
         type: 'likert',
-        placeholder: 'Click here to tell us more about your background. What is your knowledge about the data category, the government in your country, and Open Data in general?',
+        placeholder: 'Clickea aca para contarnos mas de tu background. Cual es tu conocimiento de la de la materia, el gobierno de tu pais, y datos abiertos en general?',
         config: {
           options: [
             {
-              description: 'I\'m not familiar at all with the field',
+              description: 'No estoy muy informado de la materia',
               value: '1'
             },
             {
-              description: 'I have some knowledge about the field',
+              description: 'Tengo conocimiento de la materia',
               value: '2'
             },
             {
-              description: 'I have advanced knowledge in this field',
+              description: 'Tengo conocimiento avanzado de la materia',
               value: '3'
             }
           ]
@@ -99,22 +99,22 @@ const EntryForm = React.createClass({
       },
       {
         id: 'yourKnowledgeOpenData',
-        text: 'Rate your knowledge of open data.',
+        text: 'Califica tu conocimiento de datos abiertos.',
         description: '',
         type: 'likert',
         placeholder: '',
         config: {
           options: [
             {
-              description: 'I\'m not familiar at all with open data',
+              description: 'No estoy muy informado con datos abiertos',
               value: '1'
             },
             {
-              description: 'I have some knowledge about open data',
+              description: 'Tengo conocimiento de datos abiertos',
               value: '2'
             },
             {
-              description: 'I have advanced knowledge',
+              description: 'Tengo conocimiento avanzado de datos abiertos',
               value: '3'
             }
           ]
@@ -154,7 +154,7 @@ const EntryForm = React.createClass({
   <div className="container">
     <div className="intro">
       <h1>Section A - About you</h1>
-      <p>This section is not scored, but could provide valuable insights.</p>
+      <p>Te gustaria dejarnos algun comentario adicional?</p>
     </div>
 
     <QuestionForm context={this.props.context}
@@ -170,7 +170,7 @@ const EntryForm = React.createClass({
 <section>
   <div className="container">
     <div className="intro">
-      <h1>Section B - About the data</h1>
+      <h1>Section B - Sobre los datos</h1>
     </div>
 
     <QuestionForm context={this.props.context}
@@ -193,7 +193,7 @@ const EntryForm = React.createClass({
       <div className="main">
         <div>
           <div className="instructions"></div>
-          <h2>Any other comments?</h2>
+          <h2>Algun comentario/aclaracion?</h2>
         </div>
         <div>
           <helpers.CurrentEntry />
