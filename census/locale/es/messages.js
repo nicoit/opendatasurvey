@@ -7,6 +7,14 @@
          null,
          "Inicio"
       ],
+      "Update": [
+         null,
+         "Actualizar"
+      ],
+      "Add": [
+         null,
+         "Agregar"
+      ],
       "Powered by <a href='%s'>Open Data Census</a>": [
          null,
          "Funcionando con el <a href='%s'>Open Data Census</a>"

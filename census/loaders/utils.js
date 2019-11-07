@@ -10,8 +10,8 @@ var _mapParsedCsvData = function(parsedData) {
   var result = [];
   var keys = [];
   var whiteList = _.clone(xss.whiteList);
-  whiteList.table = _.union(whiteList.table, ['class']);
-  whiteList.img = _.union(whiteList.img, ['style', 'align', 'class']);
+  whiteList.table = _.union(whiteList.table, ['class', 'id']);
+  whiteList.img = _.union(whiteList.img, ['style', 'align', 'class', 'id']);
   var xssOptions = {
     whiteList: whiteList
   };
@@ -25,7 +25,7 @@ var _mapParsedCsvData = function(parsedData) {
     } else {
       var object = {};
       for (var n = 0; n < keys.length; n++) {
-        console.log(i,parsedData[i][0]);
+        //console.log(i,parsedData[i][0]);
         if (parsedData[i][0] != 'custom_css')
           object[keys[n]] = xss(_.trim(parsedData[i][n]), xssOptions);
         else
