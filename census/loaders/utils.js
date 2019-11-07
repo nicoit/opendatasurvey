@@ -18,13 +18,18 @@ var _mapParsedCsvData = function(parsedData) {
   for (var i = 0; i < parsedData.length; i++) {
     if (i === 0) {
       for (var j = 0; j < parsedData[i].length; j++) {
+
         var key = xss(_.trim(parsedData[i][j].toLowerCase()));
         keys.push(key);
       }
     } else {
       var object = {};
       for (var n = 0; n < keys.length; n++) {
-        object[keys[n]] = xss(_.trim(parsedData[i][n]), xssOptions);
+        console.log(i,parsedData[i][0]);
+        if (parsedData[i][0] != 'custom_css')
+          object[keys[n]] = xss(_.trim(parsedData[i][n]), xssOptions);
+        else
+          object[keys[n]] = _.trim(parsedData[i][n]);
       }
       result.push(object);
     }

@@ -8081,7 +8081,8 @@ table.response-summary thead tr th div,
 .sexyHeader table tr th.datasetHeader {
   vertical-align: inherit; }
   .sexyHeader table tr th.datasetHeader div {
-    transform: rotate(-90deg) translateX(-50%); }
+    transform: rotate(-90deg) translateX(-50%);
+  }
     .sexyHeader table tr th.datasetHeader div a {
       height: 100%;
       width: 100%;

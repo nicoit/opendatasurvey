@@ -18,10 +18,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind:400,700&display=swap" rel="stylesheet">
-
+    {% if site.settings.banner_text %}
     <style type="text/css">
       {{ site.settings.custom_css }}
     </style>
+    {% endif %}
 
     {% include 'includes/analytics.html' %}
   </head>
