@@ -95,11 +95,13 @@
                 </ul>
               </li>
             {% endif %}
+            {% if not is_index %}
+            <li><a href="/about/">{{ gettext("About") }}</a></li>
+            <li><a href="/changes/">{{ gettext("Changes") }}</a></li>
+            {% endif %}
           </ul>
           <ul class="menu">
             {% if not is_index %}
-              <li><a href="/about/">{{ gettext("About") }}</a></li>
-              <li><a href="/changes/">{{ gettext("Changes") }}</a></li>
               <li><a href="/faq/">{{ gettext("FAQ") }}</a></li>
               {% if site.settings.methodology_page %}
                 <li><a href="/methodology/">{{ gettext("Methodology") }}</a></li>
