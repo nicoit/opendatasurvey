@@ -17,7 +17,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for dataset in datasets|sort(false, false, 'rank') %}
+      {% for dataset in datasets %}
         {% set datasetEntries = entries|where({'dataset': dataset.id}) %}
         {% if datasetEntries %}
           {% set top_entry = datasetEntries|first %}
