@@ -21,7 +21,7 @@
       </tr>
     </thead>
     <tbody>
-      {% for place in places|sort(false, false, sortby) %}
+      {% for place in places %}
         <tr data-rank="{{ place.rank }}" data-score="{{ place.computedRelativeScore}}" data-place="{{ place.id }}" data-name="{{ place.name }}">
           <td class="rank" data-rank="{{ place.rank }}">
             <div>{{ place.rank }}</div>
