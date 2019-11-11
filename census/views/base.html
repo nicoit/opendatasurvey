@@ -102,10 +102,8 @@
               {% if site.settings.methodology_page %}
                 <li><a href="/methodology/">{{ gettext("Methodology") }}</a></li>
               {% endif %}
-              {% if site.settings.support_url %}
-                <li><a target="_blank" href="{{ site.settings.support_url }}">{{ gettext("Support") }}</a></li>
-              {% elif discussionForum %}
-                <li><a target="_blank" href="{{ discussionForum }}">{{ gettext("Support") }}</a></li>
+              {% if site.settings.tutorial_page %}
+                <li><a href="/tutorial/">{{ gettext("Tutorial") }}</a></li>
               {% endif %}
             {% endif %}
           </ul>
