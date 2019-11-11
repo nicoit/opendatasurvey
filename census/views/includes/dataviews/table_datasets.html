@@ -17,8 +17,8 @@
       </tr>
     </thead>
     <tbody>
-      {% for dataset in datasets|sort(false, false, 'rank') %}
-        {% set datasetEntries = entries|where({'dataset': dataset.id})|sort(true, false, 'computedRelativeScore') %}
+      {% for dataset in datasets %}
+        {% set datasetEntries = entries|where({'dataset': dataset.id}) %}
         {% if datasetEntries %}
           {% set top_entry = datasetEntries|first %}
           {% set top_entries = datasetEntries|where({'dataset': dataset.id, 'computedRelativeScore': top_entry.computedRelativeScore}) %}
