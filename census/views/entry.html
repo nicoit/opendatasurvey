@@ -38,6 +38,7 @@
           {% include 'includes/share_buttons.html' %}
 
           {% if is_index %}
+          <!--
           <div class="history">
             <h6>{{ gettext("See other years") }}</h6>
             <ul>
@@ -45,8 +46,9 @@
               <li><a href="http://2015.index.okfn.org/place/{{ place.slug | lower | replace('_', '-') }}/{{ dataset.id }}/2014/" title="2014">2014</a></li>
               <li><a href="http://2015.index.okfn.org/place/{{ place.slug | lower | replace('_', '-') }}/{{ dataset.id }}" title="2015">2015</a></li>
             </ul>
-            <p><small>Note: The methodology used in the Global Open Data Index has changed over time; significantly so between 2015 and 2016. For this reason, the results are not directly comparable over time.</small></p>
+            <p><small>Nota: The methodology used in the Global Open Data Index has changed over time; significantly so between 2015 and 2016. For this reason, the results are not directly comparable over time.</small></p>
           </div>
+          -->
           {% endif %}
         </div>
       </div>
