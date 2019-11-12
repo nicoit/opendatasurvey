@@ -8079,14 +8079,16 @@ table.response-summary thead tr th div,
   vertical-align: bottom; }
 
 .sexyHeader table tr th.datasetHeader {
-  vertical-align: inherit; }
+  vertical-align: inherit;
+}
   .sexyHeader table tr th.datasetHeader div {
-    transform: rotate(-90deg) translateX(-50%);
+    /*transform: rotate(-90deg) translateX(-50%);*/
   }
     .sexyHeader table tr th.datasetHeader div a {
       height: 100%;
       width: 100%;
-      display: block; }
+      display: block;
+    }
 
 table.response-summary thead tr th div span,
 .sexyHeader table tr th div span {
@@ -8112,7 +8114,7 @@ table.response-summary thead tr th.place-score,
 body #header {
   /*background-color: #428bca;*/
 
-  background-image: url("/imgs/header2.png");
+  background-image: url("/imgs/heather.png");
   border-bottom: solid 2px #3071a9;
   color: #fff; }
   body #header a {
@@ -8858,7 +8860,8 @@ td.previous-results {
     vertical-align: inherit; }
     #places_overview_table thead tr th.datasetHeader div,
     #places_overview_table_index thead tr th.datasetHeader div {
-      transform: rotate(-90deg) translateX(-50%); }
+    /*  transform: rotate(-90deg) translateX(-50%); */
+    }
       #places_overview_table thead tr th.datasetHeader div a,
       #places_overview_table_index thead tr th.datasetHeader div a {
         height: 100%;

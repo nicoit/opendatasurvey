@@ -1,23 +1,24 @@
 {% import "macros/popovers.html" as popovers %}
 {% if is_index %}
   {% set table_id = "places_overview_table_index" %}
-  {% set sortby = "rank" %}
+  {% set sortby = "name" %}
 {% else %}
   {% set table_id = "places_overview_table" %}
   {% set sortby = "name" %}
 {% endif %}
+<div class="btn btn-danger">Holas</div>
 <div class="table-responsive">
   <table id="{{ table_id }}" class="table data-table sexyTable">
     <thead>
       <tr>
-        <th class="clickable sort_rank header" title="{{ gettext('Sort by Rank') }}" style="width: 71px;">{{ gettext('Rank') }}</th>
+        <th class="clickable sort_rank header" title="{{ gettext('Sort by Rank') }}" style="width: 71px;">{{ gettext('Rank_small') }}</th>
         <th class="clickable sort_place header" title="{{ gettext('Sort by A-Z') }}" style="width: 71px;">{{ gettext('Place') }}</th>
         {% for dataset in datasets %}
           <th class="datasetHeader">
             <div><a href="{{ format('/dataset/%(dataset)s', {dataset: dataset.id}) }}">{{ dataset.name }}</a></div>
           </th>
         {% endfor %}
-        <th class="clickable header" style="width: 72px;">{{ gettext('Score') }}</th>
+        <th class="clickable header" style="width: 72px;">{{ gettext('Score_smal') }}</th>
       </tr>
     </thead>
     <tbody>

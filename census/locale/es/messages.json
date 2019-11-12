@@ -463,13 +463,21 @@
          null,
          "Ordenar por Clasificación"
       ],
+      "Rank_small": [
+         null,
+         "Clasif."
+      ],
       "Rank": [
          null,
          "Clasificación"
       ],
       "Sort by A-Z": [
          null,
-         "Ordenar de la A-Z"
+         "Ordenar de A-Z"
+      ],
+      "Sort by A-Z_small": [
+         null,
+         "Ord A-Z"
       ],
       "Place": [
          null,
@@ -478,6 +486,10 @@
       "Score": [
          null,
          "Calificación"
+      ],
+      "Score_small": [
+         null,
+         "Calif."
       ],
       "No data": [
          null,
