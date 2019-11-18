@@ -30,7 +30,7 @@ nconf.file({
 nconf.defaults({
   env: process.env.NODE_ENV || 'development',
   registryUrl: process.env.REGISTRY_URL || '',
-  title_short: 'Census',
+  title_short: 'Indices',
   base_domain: process.env.BASE_DOMAIN || 'dev.census.org:5000',
   urlTmpl: 'SCHEME://SUB.DOMAIN/PATH',
   auth_subdomain: process.env.AUTH_SUBDOMAIN || 'id',

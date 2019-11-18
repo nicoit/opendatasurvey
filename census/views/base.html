@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Open Knowledge">
+
+    <meta property="og:title" content="{{ site.settings.title or site_title }}"/>
+    <meta property="og:type" content="website"/>
+    <!--<meta property="og:url" content="{{ site.settings.title or site_title }}"/>-->
+    <meta property="og:image" content="http://opendatasurvey.testerdomain.com.ar/imgs/logo.png"/>
+    <meta property="og:site_name" content="Indice Abierto de Genero"/>
+    <meta property="og:description" content="Indice Abierto de datos de genero en argentina."/>
+
+
+
+
     <title>{% block title%}{{ title }}{% endblock %} - {{ site.settings.title or site_title }}</title>
     <!--[if lt IE 9]>
     <script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script>
@@ -23,6 +34,10 @@
       {{ site.settings.custom_css }}
     </style>
     {% endif %}
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Prompt:300,400&display=swap" rel="stylesheet">
 
     {% include 'includes/analytics.html' %}
   </head>

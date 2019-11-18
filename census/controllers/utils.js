@@ -2,8 +2,7 @@
 
 const _ = require('lodash');
 const FIELD_SPLITTER = /[\s,]+/;
-const ANONYMOUS_USER_ID = process.env.ANONYMOUS_USER_ID ||
-  '0e7c393e-71dd-4368-93a9-fcfff59f9fff';
+const ANONYMOUS_USER_ID = process.env.ANONYMOUS_USER_ID ||  '0e7c393e-71dd-4368-93a9-fcfff59f9fff';
 const marked = require('marked');
 const Promise = require('bluebird');
 const config = require('../config');
