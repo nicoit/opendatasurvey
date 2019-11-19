@@ -11,15 +11,15 @@
 {% if not site_title %}
 {% set site_title = 'Indices Abiertos' %}
 {% endif %}
-{#
+
 <h5 {% if not is_index %} class="sr-only"{% endif %}>{{ gettext("Compartis esta pagina!") }}</h5>
-#}
+
 <div class="btn-group">
-  {#
+
   <a href="http://twitter.com/share?url={{current_url}}&amp;text=Visita {{site_title}}" class="btn btn-default btn-sm twitter" target="_blank">
     <i class="fa fa-twitter"></i> Twitter  </a>
   <a href="http://www.facebook.com/sharer/sharer.php?u={{current_url}}" class="btn btn-default btn-sm facebook" target="_blank">
     <i class="fa fa-facebook"></i> Facebook  </a>
-  #}
+
 </div>
 
