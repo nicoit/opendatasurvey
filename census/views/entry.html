@@ -88,7 +88,7 @@
     </div>
     {% endif %}
 
-    <h3>{{ gettext("Que tan abierts son los datos?") }}</h3>
+    <h3>{{ gettext("Que tan abiertos son los datos?") }}</h3>
     <ul class="availability-single">
     {% for question in questions -%}
       {% if question.score -%}
@@ -142,7 +142,7 @@
 
           <tr>
             <td>{{question.questionshort or answer.id}}</td>
-            <td>{{gettext(answerValue)}}</td>
+            <td>{{gettext(''+answerValue)}}</td>
             <td>{{answer.commentValue}}</td>
           </tr>
           {% endif %}
