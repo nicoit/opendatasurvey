@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Indice Abierto de datos de genero en argentina.">
     <meta name="author" content="FCA Argentina">
-    <meta property="og:title" content="Indice Abierto de Genero"/>
+    <meta property="og:title" content="{{ site.settings.title or site_title }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://opendatasurvey.testerdomain.com.ar/"/>
     <meta property="og:image" content="http://opendatasurvey.testerdomain.com.ar/imgs/logo.png"/>
@@ -28,7 +28,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind:400,700&display=swap" rel="stylesheet">
-    {% if site.settings.banner_text %}
+    {% if site.settings.custom_css %}
     <style type="text/css">
       {{ site.settings.custom_css }}
     </style>
