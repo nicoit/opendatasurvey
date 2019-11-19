@@ -110,9 +110,9 @@
       <table class="table table-striped yntable">
         <tbody>
           <tr>
-            <th>{{ gettext("Question")}}</th>
-            <th>{{ gettext("Answer") }}</th>
-            <th>{{ gettext("Comment")}}</th>
+            <th>{{ gettext("Pregunta")}}</th>
+            <th>{{ gettext("Respuesta") }}</th>
+            <th>{{ gettext("Commentario")}}</th>
           </tr>
         {% for answer in answers %}
           {% if answer.value %}
@@ -140,7 +140,7 @@
 
           <tr>
             <td>{{question.questionshort or answer.id}}</td>
-            <td>{{answerValue}}</td>
+            <td>{{gettext(answerValue)}}</td>
             <td>{{answer.commentValue}}</td>
           </tr>
           {% endif %}
