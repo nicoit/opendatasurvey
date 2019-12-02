@@ -197,7 +197,7 @@ let QuestionFieldYesNo = React.createClass({
                      onChange={this.handler}
                      {...readOnlyOpts} />
               <label htmlFor={this.props.id + '2'}>
-                <span>Yes</span>
+                <span>Si</span>
               </label>
             </div>
           </div>
